@@ -1,8 +1,8 @@
 {
-  "name": "pubsub-js",
+  "name": "pubsubjs.js",
   "version": "1.5.0",
   "description": "Dependency free publish/subscribe library",
-  "main": "./src/pubsub.js",
+  "main": "./src/pubsubjs.js",
   "directories": {
     "lib": "src",
     "test": "test"

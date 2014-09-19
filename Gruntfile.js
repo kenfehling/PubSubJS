@@ -39,8 +39,8 @@ module.exports = function(grunt) {
 				separator: ''
 			},
 		    jquery: {
-		    	src: ['wrappers/jquery/pubsub.js.pre.txt', 'src/pubsub.js', 'wrappers/jquery/pubsub.js.post.txt'],
-		    	dest: 'jquery.pubsub.js'
+		    	src: ['wrappers/jquery/pubsubjs.js.pre.txt', 'src/pubsubjs.js', 'wrappers/jquery/pubsubjs.js.post.txt'],
+		    	dest: 'jquery.pubsubjs.js'
 		    }
 		}
 	});

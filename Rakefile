@@ -7,8 +7,8 @@ require 'rake/clean'
 def templated_build(name, opts={})
   short = name.downcase
   source = File.join("wrappers", short)
-  dependencies = ["src/pubsub.js"] + Dir.glob("#{source}/*.tpl.*")
-  target_js = opts[:location] ? "pubsub.js" : "#{short}.pubsub.js"
+  dependencies = ["src/pubsubjs.js"] + Dir.glob("#{source}/*.tpl.*")
+  target_js = opts[:location] ? "pubsubjs.js" : "#{short}.pubsubjs.js"
 
   CLEAN.include(opts[:location] ? opts[:location] : target_js)
 
@@ -19,9 +19,9 @@ def templated_build(name, opts={})
     mkdir_p opts[:location] if opts[:location]
 
     files = [
-      "#{source}/pubsub.js.pre.txt",
-      'src/pubsub.js',
-      "#{source}/pubsub.js.post.txt"
+      "#{source}/pubsubjs.js.pre.txt",
+      'src/pubsubjs.js',
+      "#{source}/pubsubjs.js.post.txt"
     ]
 
     open("#{opts[:location] || '.'}/#{target_js}", 'w') do |f|
@@ -46,6 +46,6 @@ task :minify do
   # npm install uglify-js
   mmjs = "pubsub.min.js"
   # `echo "/*! Version: 1.0.4-dev */" > #{mmjs}`
-  `uglifyjs pubsub.js >> #{mmjs}`
+  `uglifyjs pubsubjs.js >> #{mmjs}`
   puts "Created #{mmjs}"
 end

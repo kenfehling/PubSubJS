@@ -1,7 +1,7 @@
 {
   "name": "PubSubJS",
   "version": "1.5.0",
-  "main": "src/pubsub.js",
+  "main": "src/pubsubjs.js",
   "ignore": [
     "**/.*",
     "iframe",
