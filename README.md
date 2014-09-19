@@ -1,6 +1,6 @@
 # PubSubJS
 
-[![Build Status](https://travis-ci.org/mroderick/PubSubJS.png)](https://travis-ci.org/mroderick/PubSubJS) [![NPM version](https://badge.fury.io/js/pubsubjs.js.png)](http://badge.fury.io/js/pubsubjs.js)
+[![Build Status](https://travis-ci.org/mroderick/PubSubJS.png)](https://travis-ci.org/mroderick/PubSubJS) [![NPM version](https://badge.fury.io/js/pubsub-js.js.png)](http://badge.fury.io/js/pubsub-js.js)
 
 PubSubJS is a [topic-based](http://en.wikipedia.org/wiki/Publish–subscribe_pattern#Message_filtering) [publish/subscribe](http://en.wikipedia.org/wiki/Publish/subscribe) library written in JavaScript.
 
@@ -29,8 +29,8 @@ PubSubJS is designed to be used within a **single process**, and is not a good c
 There are several ways of getting PubSubJS
 
 * [Download a tagged version](https://github.com/mroderick/PubSubJS/tags) from GitHub
-* Install via npm (`npm install pubsubjs.js`)
-* Intall via bower (`bower install pubsubjs.js`)
+* Install via npm (`npm install pubsub-js.js`)
+* Intall via bower (`bower install pubsub-js.js`)
 
 ## Examples
 
@@ -181,7 +181,7 @@ or using Grunt
 
     $ grunt jquery
 
-Produces jquery.pubsubjs.js
+Produces jquery.pubsub-js.js
 
 ### Use with jQuery
 

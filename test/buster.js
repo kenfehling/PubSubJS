@@ -7,7 +7,7 @@ config["PubSubJS browser"] = {
 	rootPath: "../",
 	environment: "browser",
 	sources: [
-		"src/pubsubjs.js"
+		"src/pubsub-js.js"
 	],
 	tests: [
 		"test/helper.js",
@@ -24,19 +24,19 @@ config["PubSubJS - jQuery 1.7.2"] = {
 	],
 
 	resources: [
-		"src/pubsubjs.js",
+		"src/pubsub-js.js",
 		"wrappers/jquery/*",
 		{
-			path: "/jquery.pubsubjs.js",
+			path: "/jquery.pubsub-js.js",
 			combine: [
-				"wrappers/jquery/pubsubjs.js.pre.txt",
-				"src/pubsubjs.js",
-				"wrappers/jquery/pubsubjs.js.post.txt"
+				"wrappers/jquery/pubsub-js.js.pre.txt",
+				"src/pubsub-js.js",
+				"wrappers/jquery/pubsub-js.js.post.txt"
 			]
 		}
 	],
 
-	sources: ["/jquery.pubsubjs.js"],
+	sources: ["/jquery.pubsub-js.js"],
 
 	tests: [
 		"test/helper.js",
@@ -49,7 +49,7 @@ config["PubSubJS node"] = {
 	rootPath: "../",
 	environment: "node",
 	sources: [
-		"src/pubsubjs.js"
+		"src/pubsub-js.js"
 	],
 	tests: [
 		"test/helper.js",
